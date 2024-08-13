@@ -235,7 +235,7 @@ ENV NVIDIA_VISIBLE_DEVICES=all
 WORKDIR /build
 
 COPY . .
-COPY .git .
+# COPY .git .
 RUN echo "GO_TAGS: $GO_TAGS"
 
 RUN make prepare
